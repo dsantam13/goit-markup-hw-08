@@ -14,6 +14,10 @@ nav {
     &:active, &:visited {
         color: $color-logo;
     }
+
+    span {
+        color: #000000;
+    }
 }
 
 .page-header {

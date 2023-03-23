@@ -120,6 +120,7 @@
         }
 
         &:focus {
+            border-color: $color-logo;
             outline: none;
         }
     }
@@ -167,6 +168,11 @@
         letter-spacing: 0.03em;
         color: $color-text;
         width: 400.62px;
+
+        a {
+            color: $color-logo;
+            text-decoration: underline;
+        }
     }
 
     &__button {
@@ -187,7 +193,7 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         margin: auto;
-        margin-top: 6px;
+        margin-top: 30px;
         cursor: pointer;
 
         &:hover {

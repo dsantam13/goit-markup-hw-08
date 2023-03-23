@@ -23,7 +23,7 @@
         letter-spacing: 0.03em;
         color: $text-banner;
         width: 231px;
-        margin-top: 9px;
+        margin-top: 28px;
         margin-bottom: 2px;
     }
 
@@ -45,6 +45,25 @@
         &:not(:last-child) {
             margin-bottom: 2px;
         }
+    }
+}
+
+.logo-footer {
+    font-family: $font-logo;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-align: right;
+    letter-spacing: 0.03em;
+    color: $color-logo;
+
+    &:active,
+    &:visited {
+        color: $color-logo;
+    }
+
+    span {
+        color: $text-banner;
     }
 }
 
