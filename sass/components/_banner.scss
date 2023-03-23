@@ -1,0 +1,44 @@
+.banner {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: $color-background;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('.././images/Image-back.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $text-banner;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    .button {
+        font-family: $font-primary;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        background-color: $color-logo;
+        color: $text-banner;
+        text-align: center;
+        width: 261px;
+        height: 50px;
+        background: $color-logo;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        cursor: pointer;
+        border: 0px;
+        padding: 0px;
+    }
+}
+

@@ -1,0 +1,149 @@
+.page-footer {
+    background-color: $color-background;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    &__address {
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $text-banner;
+        width: 231px;
+        margin-top: 9px;
+        margin-bottom: 2px;
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__data {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: $color-text;
+        line-height: 1.71;
+
+        &:not(:last-child) {
+            margin-bottom: 2px;
+        }
+    }
+}
+
+.networks {
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+        font-family: $font-primary;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        color: $text-banner;
+        text-transform: uppercase;
+    }
+
+    &__icons {
+        display: inline-flex;
+        justify-content: flex-start;
+        height: 44px;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    &__icon {
+        fill: $text-banner;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        cursor: pointer;
+
+        &:hover,&:focus {
+            background-color: $color-logo;
+        }
+    }
+}
+
+.form-footer {
+    display: inline-flex;
+    align-items: flex-end;
+
+    &__mail {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            width: 358px;
+            background-color: inherit;
+            margin-top: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            padding: 15px 16px;
+            font-family: $font-primary;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 125%;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+
+    &__text {
+        font-family: $font-primary;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        color: $text-banner;
+        text-transform: uppercase;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 50px;
+        border: none;
+        background-color: $color-logo;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        font-family: $font-primary;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 188%;
+        color: $text-banner;
+        margin-left: 12px;
+        cursor: pointer;
+    }
+
+    .form-footer__icon {
+        width: 24px;
+        height: 24px;
+        fill: $text-banner;
+        margin-left: 20px;
+    }
+
+}

@@ -1,0 +1,61 @@
+@import 'utils/variables';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-text;
+    margin: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+    &:active {
+        color: $color-logo;
+    }
+
+    &:visited {
+        color: $color-title;
+    }
+}
+
+figure,
+h1,
+h2,
+h3,
+p,
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@import 'components/page-header';
+
+@import 'components/banner';
+
+@import 'components/descriptions';
+
+@import 'components/service';
+
+@import 'components/team';
+
+@import 'components/clients';
+
+@import 'components/page-footer';
+
+@import 'components/modal';
+
+@import 'components/portafolio';

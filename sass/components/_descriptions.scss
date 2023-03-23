@@ -1,0 +1,41 @@
+.descriptions {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 89px;
+    padding-bottom: 94px;
+
+    li {
+        width: 270px;
+    }
+
+    &__icon {
+        box-sizing: content-box;
+        padding: 25px 100px;
+        background-color: $background-filter;
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        font-family: $font-primary;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        color: $color-title;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+
+        &:hover {
+            color: var(--color-text);
+        }
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+}

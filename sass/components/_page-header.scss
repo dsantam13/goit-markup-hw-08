@@ -1,0 +1,102 @@
+nav {
+    display: flex;
+}
+
+.logo {
+    font-family: $font-logo;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-align: right;
+    letter-spacing: 0.03em;
+    color: $color-logo;
+
+    &:active, &:visited {
+        color: $color-logo;
+    }
+}
+
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+    }
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    margin-left: 93px;
+
+    li:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    &__item {
+        position: relative;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: $color-title;
+
+        &:hover, &:focus {
+            color: $color-logo;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: calc(100% + 28px);
+            width: 100%;
+            background-color: $color-logo;
+            height: 4px;
+            border-radius: 2px;
+            opacity: 0;
+        }
+
+        &:hover::after,
+        &:focus::after {
+            opacity: 1;
+        }
+    }
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+
+    &__item {
+        display: inline-flex;
+        align-items: center;
+
+        &:hover *,
+        &:focus * {
+            color: $color-logo;
+            fill: $color-logo;
+        }
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__icon {
+        margin-right: 10px;
+        fill: $color-text;
+    }
+
+    &__link {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: $color-text;
+    }
+}

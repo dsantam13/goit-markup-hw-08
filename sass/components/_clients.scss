@@ -1,0 +1,38 @@
+.clients {
+    margin-top: 59px;
+    margin-bottom: 151px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $color-title;
+    }
+
+    &__logo {
+        margin-top: 44.02px;
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
+
+    &__icon {
+        box-sizing: content-box;
+        padding: 14.09px 32px;
+        outline: 1px solid $fill-icon;
+        border-radius: 4px;
+        fill: $fill-icon;
+
+        &:hover, &:focus {
+            outline: 1px solid $color-logo;
+            fill: $color-logo;
+        }
+    }
+}
