@@ -39,7 +39,7 @@ ul {
   margin-left: auto;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) {
   .container {
     width: 738px;
   }
@@ -177,23 +177,23 @@ nav {
   margin-left: auto;
   background-color: #2F303A;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 1600px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(".././images/Image-back.jpg");
+  padding: 118px 0px;
+  max-width: 480px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(".././images/Image-back-phone.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .banner .title {
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-top: 0px;
+  width: 360px;
+  margin: auto;
   margin-bottom: 30px;
 }
 .banner .button {
@@ -214,6 +214,23 @@ nav {
   padding: 0px;
 }
 
+@media (min-width: 768px) {
+  .banner {
+    max-width: 768px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(".././images/Image-back-tablet.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  .banner {
+    padding: 200px 0px;
+    max-width: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(".././images/Image-back.jpg");
+  }
+  .banner .title {
+    width: 696px;
+    font-size: 44px;
+  }
+}
 .descriptions {
   display: flex;
   align-items: flex-start;
