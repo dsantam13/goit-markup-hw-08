@@ -1,17 +1,13 @@
 .descriptions {
     display: flex;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 60px 0;
     justify-content: space-between;
-    padding-top: 89px;
-    padding-bottom: 94px;
-
-    li {
-        width: 270px;
-    }
+    gap: 30px;
 
     &__icon {
         box-sizing: content-box;
-        padding: 25px 100px;
+        padding: 25px 190px;
         background-color: $background-filter;
         border-radius: 4px;
         margin-bottom: 30px;
@@ -27,6 +23,7 @@
         color: $color-title;
         margin-bottom: 10px;
         text-transform: uppercase;
+        text-align: center;
 
         &:hover {
             color: var(--color-text);
@@ -37,5 +34,36 @@
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
+    }
+}
+
+@media (min-width: 768px) {
+    .descriptions {
+        li {
+            width: 354px;
+        }
+    
+        &__icon {
+            padding: 25px 142px;
+        }
+    
+        &__title {
+            text-align: start;
+        }
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .descriptions {
+        padding: 94px 0;
+
+        li {
+            width: 270px;
+        }
+
+        &__icon {
+            padding: 25px 100px;
+        }
     }
 }
