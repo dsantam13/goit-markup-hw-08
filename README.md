@@ -1,2 +1,2 @@
-# goit-markup-hw-07
-Séptima tarea GoIT
+# goit-markup-hw-08
+Octava tarea GoIT
