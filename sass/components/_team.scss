@@ -1,11 +1,10 @@
 .team {
     background-color: $background-filter;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 60px 0;
 
     &__title {
         font-weight: 700;
-        font-size: 36px;
+        font-size: 28px;
         line-height: 1.17;
         text-align: center;
         letter-spacing: 0.03em;
@@ -15,8 +14,8 @@
 
 .cards {
     display: flex;
-    margin-top: 50px;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
 
     &__item {
         width: 270px;
@@ -67,5 +66,23 @@
             background-color: $color-logo;
             fill: $text-banner;
         }
+    }
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1200px) {
+    .team {
+        padding: 94px 0;
+
+        &__title {
+            font-size: 36px;
+        }
+    } 
+    .cards {
+        margin-top: 50px;
+        justify-content: space-between;
     }
 }
