@@ -371,12 +371,14 @@ nav {
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
+  gap: 30px;
 }
 .cards__item {
+  width: 450px;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 .cards__person {
   font-size: 16px;
@@ -417,34 +419,43 @@ nav {
   fill: #FFFFFF;
 }
 
+@media (min-width: 768px) {
+  .cards__item {
+    width: 354px;
+  }
+}
 @media (min-width: 1200px) {
+  .cards {
+    margin-top: 50px;
+    justify-content: space-between;
+  }
+  .cards__item {
+    width: 270px;
+    padding-bottom: 30px;
+  }
   .team {
     padding: 94px 0;
   }
   .team__title {
     font-size: 36px;
   }
-  .cards {
-    margin-top: 50px;
-    justify-content: space-between;
-  }
 }
 .clients {
-  margin-top: 59px;
-  margin-bottom: 151px;
+  margin: 60px 0;
 }
 .clients__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
 }
 .clients__logo {
-  margin-top: 44.02px;
+  margin-top: 30px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .clients__logo li {
   display: inline-flex;
@@ -453,7 +464,7 @@ nav {
 }
 .clients__icon {
   box-sizing: content-box;
-  padding: 14.09px 32px;
+  padding: 16px 52px;
   outline: 1px solid #AFB1B8;
   border-radius: 4px;
   fill: #AFB1B8;
@@ -463,6 +474,26 @@ nav {
   fill: #2196F3;
 }
 
+@media (min-width: 768px) {
+  .clients__icon {
+    padding: 16px 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .clients {
+    margin: 94px 0;
+  }
+  .clients__title {
+    font-size: 36px;
+  }
+  .clients__logo {
+    margin-top: 50px;
+    justify-content: space-between;
+  }
+  .clients__icon {
+    padding: 16px 32px;
+  }
+}
 .page-footer {
   background-color: #2F303A;
   padding-top: 60px;
