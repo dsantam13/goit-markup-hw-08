@@ -4,7 +4,7 @@
     background-color: $color-background;
     text-align: center;
     padding: 118px 0px;
-    max-width: 480px;
+    //max-width: 480px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('.././images/Image-back-phone.jpg');
     background-size: cover;
     background-position: center;
@@ -52,7 +52,6 @@
 
 @media (min-width: 768px) {
     .banner {
-        max-width: 768px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('.././images/Image-back-tablet.jpg');
     }
 
@@ -68,7 +67,6 @@
 @media (min-width:1200px) {
     .banner {
         padding: 200px 0px;
-        max-width: 1600px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('.././images/Image-back.jpg');
 
         .title {
