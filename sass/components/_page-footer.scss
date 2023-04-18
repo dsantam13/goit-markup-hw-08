@@ -1,22 +1,15 @@
+
 .page-footer {
     background-color: $color-background;
-    padding-top: 60px;
-    padding-bottom: 60px;
-
-    .container {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-
+    padding: 60px 0px;
 }
 
 .location {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
 
     &__address {
+        flex-basis: 100%;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -26,16 +19,18 @@
         color: $text-banner;
         margin-top: 28px;
     }
-
+        
     &__contacts {
+        flex-basis: 100%;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
         margin-top: 12px;
         gap: 12px;
     }
-
+    
     &__data {
+        flex-basis: 100%;
+        text-align: center;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -46,6 +41,7 @@
 }
 
 .logo-footer {
+    flex-basis: 100%;
     font-family: $font-logo;
     font-weight: 700;
     font-size: 24px;
@@ -82,11 +78,15 @@
     }
 
     &__icons {
-        display: inline-flex;
+        display: flex;
         justify-content: center;
-        height: 44px;
         gap: 10px;
         margin-top: 20px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
     }
 
     &__icon {
@@ -102,6 +102,72 @@
     }
 }
 
+.form-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+
+    &__mail {
+        flex-basis: 100%;
+
+        input {
+            width: 100%;
+            background-color: inherit;
+            margin-top: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            padding: 14px 16px;
+            font-family: $font-primary;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 125%;
+            letter-spacing: 0.03em;
+            color: $color-text-footer;
+        }
+    }
+
+    &__text {
+        font-family: $font-primary;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: $text-banner;
+        text-transform: uppercase;
+    }
+
+    &__btn {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 50px;
+        border: none;
+        background-color: $color-logo;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        font-family: $font-primary;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 188%;
+        color: $text-banner;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .form-footer__icon {
+        fill: $text-banner;
+        margin-left: 25px;
+    }
+}
+
+/*
 .form-footer {
     display: flex;
     flex-direction: column;
@@ -167,177 +233,6 @@
         height: 24px;
         fill: $text-banner;
         margin-left: 25px;
-    }
-
-}
-
-/*
-.page-footer {
-    background-color: $color-background;
-    padding-top: 60px;
-    padding-bottom: 60px;
-
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-.location {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-
-    &__address {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        color: $text-banner;
-        width: 231px;
-        margin-top: 28px;
-        margin-bottom: 2px;
-    }
-
-    &__contacts {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    &__data {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        color: $color-text;
-        line-height: 1.71;
-
-        &:not(:last-child) {
-            margin-bottom: 2px;
-        }
-    }
-}
-
-.logo-footer {
-    font-family: $font-logo;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $color-logo;
-
-    &:active,
-    &:visited {
-        color: $color-logo;
-    }
-
-    span {
-        color: $text-banner;
-    }
-}
-
-.networks {
-    display: flex;
-    flex-direction: row;
-
-    &__text {
-        font-family: $font-primary;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        color: $text-banner;
-        text-transform: uppercase;
-    }
-
-    &__icons {
-        display: inline-flex;
-        justify-content: center;
-        height: 44px;
-        gap: 10px;
-        margin-top: 20px;
-    }
-
-    &__icon {
-        fill: $text-banner;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 50%;
-        cursor: pointer;
-
-        &:hover,&:focus {
-            background-color: $color-logo;
-        }
-    }
-}
-
-.form-footer {
-    display: inline-flex;
-    align-items: flex-end;
-
-    &__mail {
-        display: flex;
-        flex-direction: column;
-
-        input {
-            width: 358px;
-            background-color: inherit;
-            margin-top: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 4px;
-            padding: 15px 16px;
-            font-family: $font-primary;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 125%;
-            letter-spacing: 0.03em;
-            color: rgba(255, 255, 255, 0.6);
-        }
-    }
-
-    &__text {
-        font-family: $font-primary;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        color: $text-banner;
-        text-transform: uppercase;
-    }
-
-    &__btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 200px;
-        height: 50px;
-        border: none;
-        background-color: $color-logo;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        font-family: $font-primary;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 188%;
-        color: $text-banner;
-        margin-left: 12px;
-        cursor: pointer;
-    }
-
-    .form-footer__icon {
-        width: 24px;
-        height: 24px;
-        fill: $text-banner;
-        margin-left: 20px;
     }
 
 }

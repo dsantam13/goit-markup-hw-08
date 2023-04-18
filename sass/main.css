@@ -480,21 +480,15 @@ nav {
 }
 .page-footer {
   background-color: #2F303A;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-.page-footer .container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  padding: 60px 0px;
 }
 
 .location {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
 }
 .location__address {
+  flex-basis: 100%;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -505,13 +499,15 @@ nav {
   margin-top: 28px;
 }
 .location__contacts {
+  flex-basis: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   margin-top: 12px;
   gap: 12px;
 }
 .location__data {
+  flex-basis: 100%;
+  text-align: center;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -521,6 +517,7 @@ nav {
 }
 
 .logo-footer {
+  flex-basis: 100%;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -553,11 +550,14 @@ nav {
   text-transform: uppercase;
 }
 .networks__icons {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
-  height: 44px;
   gap: 10px;
   margin-top: 20px;
+}
+.networks__item {
+  display: flex;
+  align-items: center;
 }
 .networks__icon {
   fill: #FFFFFF;
@@ -571,21 +571,20 @@ nav {
 
 .form-footer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 60px;
 }
 .form-footer__mail {
-  display: flex;
-  flex-direction: column;
+  flex-basis: 100%;
 }
 .form-footer__mail input {
-  width: 450px;
+  width: 100%;
   background-color: inherit;
   margin-top: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  padding: 15px 16px;
+  padding: 14px 16px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -626,128 +625,23 @@ nav {
   cursor: pointer;
 }
 .form-footer .form-footer__icon {
-  width: 24px;
-  height: 24px;
   fill: #FFFFFF;
   margin-left: 25px;
 }
 
 /*
-.page-footer {
-    background-color: $color-background;
-    padding-top: 60px;
-    padding-bottom: 60px;
-
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-.location {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-
-    &__address {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        color: $text-banner;
-        width: 231px;
-        margin-top: 28px;
-        margin-bottom: 2px;
-    }
-
-    &__contacts {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    &__data {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        color: $color-text;
-        line-height: 1.71;
-
-        &:not(:last-child) {
-            margin-bottom: 2px;
-        }
-    }
-}
-
-.logo-footer {
-    font-family: $font-logo;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $color-logo;
-
-    &:active,
-    &:visited {
-        color: $color-logo;
-    }
-
-    span {
-        color: $text-banner;
-    }
-}
-
-.networks {
-    display: flex;
-    flex-direction: row;
-
-    &__text {
-        font-family: $font-primary;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        color: $text-banner;
-        text-transform: uppercase;
-    }
-
-    &__icons {
-        display: inline-flex;
-        justify-content: center;
-        height: 44px;
-        gap: 10px;
-        margin-top: 20px;
-    }
-
-    &__icon {
-        fill: $text-banner;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 50%;
-        cursor: pointer;
-
-        &:hover,&:focus {
-            background-color: $color-logo;
-        }
-    }
-}
-
 .form-footer {
-    display: inline-flex;
-    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
 
     &__mail {
         display: flex;
         flex-direction: column;
 
         input {
-            width: 358px;
+            width: 450px;
             background-color: inherit;
             margin-top: 20px;
             border: 1px solid rgba(255, 255, 255, 0.3);
@@ -759,7 +653,7 @@ nav {
             font-size: 16px;
             line-height: 125%;
             letter-spacing: 0.03em;
-            color: rgba(255, 255, 255, 0.6);
+            color: $color-text-footer;
         }
     }
 
@@ -770,11 +664,13 @@ nav {
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.03em;
+        text-align: center;
         color: $text-banner;
         text-transform: uppercase;
     }
 
     &__btn {
+        margin-top: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -790,7 +686,7 @@ nav {
         font-size: 16px;
         line-height: 188%;
         color: $text-banner;
-        margin-left: 12px;
+        padding: 0;
         cursor: pointer;
     }
 
@@ -798,7 +694,7 @@ nav {
         width: 24px;
         height: 24px;
         fill: $text-banner;
-        margin-left: 20px;
+        margin-left: 25px;
     }
 
 }
