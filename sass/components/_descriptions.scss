@@ -1,18 +1,21 @@
 .descriptions {
     display: flex;
     flex-wrap: wrap;
-    padding: 60px 0;
-    justify-content: space-between;
     gap: 30px;
+    padding: 60px 0;
+
+    li {
+        flex-basis: 100%;
+    }
 
     &__icon {
         box-sizing: content-box;
-        padding: 25px 190px;
         background-color: $background-filter;
+        padding: 25px 0;
         border-radius: 4px;
         margin-bottom: 30px;
+        width: 100%;
     }
-
     &__title {
         font-family: $font-primary;
         font-style: normal;
@@ -40,11 +43,7 @@
 @media (min-width: 768px) {
     .descriptions {
         li {
-            width: 354px;
-        }
-    
-        &__icon {
-            padding: 25px 142px;
+            flex-basis: calc((100% - 30px)/2);
         }
     
         &__title {
@@ -57,13 +56,8 @@
 @media (min-width: 1200px) {
     .descriptions {
         padding: 94px 0;
-
         li {
-            width: 270px;
-        }
-
-        &__icon {
-            padding: 25px 100px;
+            flex-basis: calc((100% - 90px)/4);
         }
     }
 }

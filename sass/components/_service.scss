@@ -20,19 +20,16 @@
     
     .list {
         display: flex;
-        justify-content: space-between;
+        gap: 30px;
     
         &__item {
             position: relative;
             overflow: hidden;
-            width: 370px;
-            height: 294px;
+            flex-basis: calc((100% - 60px)/3);
         }
     
         &__img {
             display: block;
-            max-width: 100%;
-            height: auto;
         }
     
         &__title {

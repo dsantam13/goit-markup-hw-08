@@ -17,20 +17,21 @@
         gap: 30px;
 
         li {
-            display: inline-flex;
-            align-items: center;
+            flex-basis: calc((100% - 30px)/2);
             cursor: pointer;
         }
     }
 
     &__icon {
+        display: block;
         box-sizing: content-box;
-        padding: 16px 52px;
+        padding: 16px 0;
         outline: 1px solid $fill-icon;
         border-radius: 4px;
         fill: $fill-icon;
-
-        &:hover, &:focus {
+        width: 100%;    
+        &:hover,
+        &:focus {
             outline: 1px solid $color-logo;
             fill: $color-logo;
         }
@@ -39,11 +40,12 @@
 
 @media (min-width: 768px) {
     .clients {
-        &__icon {
-            padding: 16px 60px;
+        &__logo {
+            li {
+                flex-basis: calc((100% - 60px)/3);
+            }
         }
-    }
-    
+    }  
 }
 
 @media (min-width: 1200px) {
@@ -54,10 +56,9 @@
         }
         &__logo {
             margin-top: 50px;
-            justify-content: space-between;
-        }
-        &__icon {
-            padding: 16px 32px;
+            li {
+                flex-basis: calc((100% - 150px)/6);
+            }
         }
     }
 }
