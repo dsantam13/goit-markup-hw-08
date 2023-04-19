@@ -483,12 +483,7 @@ nav {
   padding: 60px 0px;
 }
 
-.location {
-  display: flex;
-  flex-wrap: wrap;
-}
 .location__address {
-  flex-basis: 100%;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -499,14 +494,10 @@ nav {
   margin-top: 28px;
 }
 .location__contacts {
-  flex-basis: 100%;
-  display: flex;
-  flex-wrap: wrap;
   margin-top: 12px;
   gap: 12px;
 }
 .location__data {
-  flex-basis: 100%;
   text-align: center;
   font-style: normal;
   font-weight: 400;
@@ -517,7 +508,6 @@ nav {
 }
 
 .logo-footer {
-  flex-basis: 100%;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -534,8 +524,6 @@ nav {
 }
 
 .networks {
-  display: flex;
-  flex-direction: column;
   margin-top: 60px;
 }
 .networks__text {
@@ -570,13 +558,7 @@ nav {
 }
 
 .form-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   margin-top: 60px;
-}
-.form-footer__mail {
-  flex-basis: 100%;
 }
 .form-footer__mail input {
   width: 100%;
@@ -624,94 +606,11 @@ nav {
   padding: 0;
   cursor: pointer;
 }
-.form-footer .form-footer__icon {
+.form-footer__icon {
   fill: #FFFFFF;
   margin-left: 25px;
 }
 
-/*
-.form-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 60px;
-
-    &__mail {
-        display: flex;
-        flex-direction: column;
-
-        input {
-            width: 450px;
-            background-color: inherit;
-            margin-top: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 4px;
-            padding: 15px 16px;
-            font-family: $font-primary;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 125%;
-            letter-spacing: 0.03em;
-            color: $color-text-footer;
-        }
-    }
-
-    &__text {
-        font-family: $font-primary;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-align: center;
-        color: $text-banner;
-        text-transform: uppercase;
-    }
-
-    &__btn {
-        margin-top: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 200px;
-        height: 50px;
-        border: none;
-        background-color: $color-logo;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        font-family: $font-primary;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 188%;
-        color: $text-banner;
-        padding: 0;
-        cursor: pointer;
-    }
-
-    .form-footer__icon {
-        width: 24px;
-        height: 24px;
-        fill: $text-banner;
-        margin-left: 25px;
-    }
-
-}
-*/
-@media (min-width: 768px) {
-  .page-footer .container {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .location {
-    width: 232px;
-    margin-right: 165px;
-  }
-  .networks {
-    margin-top: 5px;
-  }
-}
 /*
 @media (min-width: 1200px) {
     .page-footer {

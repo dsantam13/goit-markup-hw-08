@@ -5,11 +5,8 @@
 }
 
 .location {
-    display: flex;
-    flex-wrap: wrap;
 
     &__address {
-        flex-basis: 100%;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -21,15 +18,11 @@
     }
         
     &__contacts {
-        flex-basis: 100%;
-        display: flex;
-        flex-wrap: wrap;
         margin-top: 12px;
         gap: 12px;
     }
     
     &__data {
-        flex-basis: 100%;
         text-align: center;
         font-style: normal;
         font-weight: 400;
@@ -41,7 +34,6 @@
 }
 
 .logo-footer {
-    flex-basis: 100%;
     font-family: $font-logo;
     font-weight: 700;
     font-size: 24px;
@@ -61,8 +53,6 @@
 }
 
 .networks {
-    display: flex;
-    flex-direction: column;
     margin-top: 60px;
 
     &__text {
@@ -103,13 +93,9 @@
 }
 
 .form-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     margin-top: 60px;
 
     &__mail {
-        flex-basis: 100%;
 
         input {
             width: 100%;
@@ -161,97 +147,24 @@
         cursor: pointer;
     }
 
-    .form-footer__icon {
+    &__icon {
         fill: $text-banner;
         margin-left: 25px;
     }
 }
-
-/*
-.form-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 60px;
-
-    &__mail {
-        display: flex;
-        flex-direction: column;
-
-        input {
-            width: 450px;
-            background-color: inherit;
-            margin-top: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 4px;
-            padding: 15px 16px;
-            font-family: $font-primary;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 125%;
-            letter-spacing: 0.03em;
-            color: $color-text-footer;
-        }
-    }
-
-    &__text {
-        font-family: $font-primary;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-align: center;
-        color: $text-banner;
-        text-transform: uppercase;
-    }
-
-    &__btn {
-        margin-top: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 200px;
-        height: 50px;
-        border: none;
-        background-color: $color-logo;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        font-family: $font-primary;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 188%;
-        color: $text-banner;
-        padding: 0;
-        cursor: pointer;
-    }
-
-    .form-footer__icon {
-        width: 24px;
-        height: 24px;
-        fill: $text-banner;
-        margin-left: 25px;
-    }
-
-}
-*/
-
 
 @media (min-width: 768px) {
-    .page-footer {
-        .container {
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-    }
     .location {
-        width: 232px;
-        margin-right: 165px;
+
+    }
+    .logo-footer {
+
     }
     .networks {
-        margin-top: 5px;
+
+    }
+    .subscribe {
+
     }
 }
 
