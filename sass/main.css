@@ -481,8 +481,16 @@ nav {
 .page-footer {
   background-color: #2F303A;
   padding: 60px 0px;
+  text-align: center;
+}
+.page-footer .container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
+.location {
+  flex-basis: 100%;
+}
 .location__address {
   font-style: normal;
   font-weight: 400;
@@ -494,10 +502,13 @@ nav {
   margin-top: 28px;
 }
 .location__contacts {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 12px;
   gap: 12px;
 }
 .location__data {
+  flex-basis: 100%;
   text-align: center;
   font-style: normal;
   font-weight: 400;
@@ -524,6 +535,7 @@ nav {
 }
 
 .networks {
+  flex-basis: 100%;
   margin-top: 60px;
 }
 .networks__text {
@@ -558,10 +570,17 @@ nav {
 }
 
 .form-footer {
+  display: flex;
   margin-top: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.form-footer__mail {
+  flex-basis: 100%;
 }
 .form-footer__mail input {
-  width: 100%;
+  width: 450px;
   background-color: inherit;
   margin-top: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -587,7 +606,6 @@ nav {
   text-transform: uppercase;
 }
 .form-footer__btn {
-  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -611,41 +629,69 @@ nav {
   margin-left: 25px;
 }
 
-/*
-@media (min-width: 1200px) {
-    .page-footer {
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-        }
-    }
-    .location {
-        flex-direction: column;
-        align-items: flex-start;
-
-        &__contacts {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-    }
-    .logo-footer {
-        font-size: 26px;
-        text-align: right;
-
-        &:active,
-        &:visited {
-            color: $color-logo;
-        }    
-    }
-    .networks {
-        flex-direction: column;
-        &__icons {
-            justify-content: flex-start;
-        }
-    }
+@media (min-width: 768px) {
+  .location {
+    flex-basis: 50%;
+  }
+  .networks {
+    flex-basis: 50%;
+    margin-top: 5px;
+  }
+  .subscribe {
+    flex-basis: 100%;
+  }
 }
-*/
+@media (min-width: 1200px) {
+  .page-footer .container {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: start;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .location__address {
+    text-align: start;
+  }
+  .location__contacts {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .logo-footer {
+    font-size: 26px;
+    text-align: right;
+  }
+  .logo-footer:active, .logo-footer:visited {
+    color: #2196F3;
+  }
+  .networks {
+    margin-top: 0px;
+  }
+  .networks__text {
+    text-align: start;
+  }
+  .networks__icons {
+    justify-content: flex-start;
+  }
+  .form-footer {
+    flex-wrap: nowrap;
+    gap: 0px;
+    margin-top: 0px;
+    align-items: end;
+  }
+  .form-footer__text {
+    text-align: start;
+  }
+  .form-footer__mail {
+    flex-basis: 0%;
+    margin-right: 12px;
+  }
+  .form-footer__mail input {
+    width: 358px;
+  }
+  .subscribe {
+    flex-basis: 0;
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;

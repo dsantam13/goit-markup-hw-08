@@ -1,11 +1,16 @@
-
 .page-footer {
     background-color: $color-background;
     padding: 60px 0px;
+    text-align: center;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .location {
-
+    flex-basis: 100%;
     &__address {
         font-style: normal;
         font-weight: 400;
@@ -18,11 +23,14 @@
     }
         
     &__contacts {
+        display: flex;
+        flex-wrap: wrap;
         margin-top: 12px;
         gap: 12px;
     }
     
     &__data {
+        flex-basis: 100%;
         text-align: center;
         font-style: normal;
         font-weight: 400;
@@ -53,6 +61,7 @@
 }
 
 .networks {
+    flex-basis: 100%;
     margin-top: 60px;
 
     &__text {
@@ -93,12 +102,16 @@
 }
 
 .form-footer {
+    display: flex;
     margin-top: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 
     &__mail {
-
+        flex-basis: 100%;
         input {
-            width: 100%;
+            width: 450px;
             background-color: inherit;
             margin-top: 20px;
             border: 1px solid rgba(255, 255, 255, 0.3);
@@ -127,7 +140,6 @@
     }
 
     &__btn {
-        margin-top: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -155,31 +167,33 @@
 
 @media (min-width: 768px) {
     .location {
-
-    }
-    .logo-footer {
-
+        flex-basis: 50%;
     }
     .networks {
-
+        flex-basis: 50%;
+        margin-top: 5px;
     }
     .subscribe {
-
+        flex-basis: 100%;
     }
 }
 
-/*
 @media (min-width: 1200px) {
     .page-footer {
         .container {
             display: flex;
+            flex-wrap: nowrap;
+            text-align: start;
             justify-content: space-between;
             align-items: baseline;
         }
     }
     .location {
-        flex-direction: column;
-        align-items: flex-start;
+        //flex-direction: column;
+        //align-items: flex-start;
+        &__address {
+            text-align: start;
+        }
 
         &__contacts {
             flex-direction: column;
@@ -196,10 +210,33 @@
         }    
     }
     .networks {
-        flex-direction: column;
+        margin-top: 0px;
+        &__text {
+            text-align: start;
+        }
         &__icons {
             justify-content: flex-start;
         }
     }
+    .form-footer {
+        flex-wrap: nowrap;
+        gap: 0px;
+        margin-top: 0px;
+        align-items: end;
+
+        &__text {
+            text-align: start;
+        }
+
+        &__mail {
+            flex-basis: 0%;
+            margin-right: 12px;
+            input {
+                width: 358px;
+            }
+        }
+    }
+    .subscribe {
+        flex-basis: 0;
+    }
 }
-*/
