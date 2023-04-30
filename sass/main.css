@@ -181,7 +181,7 @@ nav {
   border-radius: 50%;
   outline: none;
 }
-.menu-toggle:hover, .menu-toggle:focus {
+.menu-toggle:hover, .menu-toggle:focus, .menu-toggle:active {
   fill: #2196F3;
 }
 
@@ -197,8 +197,12 @@ nav {
   transition: transform 250ms ease-in-out;
 }
 .menu-container .container {
+  display: flex;
+  flex-direction: column;
   position: relative;
   padding: 48px 25px;
+  justify-content: space-between;
+  height: 100%;
 }
 .menu-container .container .menu-toggle {
   position: absolute;
@@ -222,6 +226,49 @@ nav {
 }
 .mobile-menu .link:hover, .mobile-menu .link:focus {
   color: #2196F3;
+}
+.mobile-menu__contacts address {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.mobile-menu__phone {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1765;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+.mobile-menu__mail {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.166;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.list-networks {
+  margin-top: 64px;
+  display: flex;
+  gap: 10px;
+}
+.list-networks li {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.222;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  cursor: pointer;
+}
+.list-networks li:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
 }
 
 .menu-container.is-open {
@@ -978,8 +1025,7 @@ nav {
 }
 .products {
   background-color: #FFFFFF;
-  padding-top: 106px;
-  padding-bottom: 82px;
+  padding: 94px 0;
 }
 
 .filters {
