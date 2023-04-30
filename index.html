@@ -19,15 +19,6 @@
       <div class="container">
         <nav>
           <a class="logo" href="#">Web<span>Studio</span></a>
-          <button
-            class="menu-toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu">
-            <svg width="24" height="24">
-              <use xlink:href="./images/icons.svg#icon-menu_40px"></use>
-            </svg>
-          </button>
-
           <ul class="links">
             <li><a class="links__item" href="#">Studio</a></li>
             <li>
@@ -56,6 +47,15 @@
             >
           </li>
         </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40">
+            <use xlink:href="./images/icons.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -151,7 +151,11 @@
               <figure>
                 <img
                   class="cards__img"
-                  srcset="images/image-3-450.jpg 450w, images/image-3-354.jpg 354w, images/image-3-270.jpg 270w"
+                  srcset="
+                    images/image-3-450.jpg 450w,
+                    images/image-3-354.jpg 354w,
+                    images/image-3-270.jpg 270w
+                  "
                   sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
                   src="images/image-3-450.jpg"
                   alt="Andrés Cubo"
@@ -194,7 +198,11 @@
               <figure>
                 <img
                   class="cards__img"
-                  srcset="images/image-4-450.jpg 450w, images/image-4-354.jpg 354w, images/image-4-270.jpg 270w"
+                  srcset="
+                    images/image-4-450.jpg 450w,
+                    images/image-4-354.jpg 354w,
+                    images/image-4-270.jpg 270w
+                  "
                   sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
                   src="images/image-4-phone.jpg"
                   alt="Carla Palacios"
@@ -237,7 +245,11 @@
               <figure>
                 <img
                   class="cards__img"
-                  srcset="images/image-5-450.jpg 450w, images/image-5-354.jpg 354w, images/image-5-270.jpg 270w"
+                  srcset="
+                    images/image-5-450.jpg 450w,
+                    images/image-5-354.jpg 354w,
+                    images/image-5-270.jpg 270w
+                  "
                   sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
                   src="images/image-5-phone.jpg"
                   alt="Mario Dorado"
@@ -280,7 +292,11 @@
               <figure>
                 <img
                   class="cards__img"
-                  srcset="images/image-6-450.jpg 450w, images/image-6-354.jpg 354w, images/image-6-270.jpg 270w"
+                  srcset="
+                    images/image-6-450.jpg 450w,
+                    images/image-6-354.jpg 354w,
+                    images/image-6-270.jpg 270w
+                  "
                   sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
                   src="images/image-6-phone.jpg"
                   alt="Pablo Mijangos"
@@ -466,7 +482,8 @@
               <use xlink:href="./images/icons.svg#icon-check"></use>
             </svg>
             <p class="modal__text">
-              I agree with the letter and accept the <a href="#">Terms and Conditions</a></p>
+              I agree with the letter and accept the
+              <a href="#">Terms and Conditions</a>
             </p>
           </label>
           <button class="modal__button" type="submit">Send</button>
@@ -478,6 +495,23 @@
         </button>
       </div>
     </div>
+    <div class="menu-container js-menu-container">
+      <div class="container">
+        <button class="menu-toggle js-close-menu">
+          <svg width="40" height="40">
+            <use xlink:href="./images/icons.svg#icon-close_40px1"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="mobile-menu">
+            <li><a href="index.html" class="link">Studio</a></li>
+            <li><a href="portafolio.html" class="link">Portafolio</a></li>
+            <li><a href="index.html" class="link">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
