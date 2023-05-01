@@ -323,7 +323,7 @@ nav {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .banner {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(".././images/Image-back-phone-2X.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(".././images/2X/Image-back-phone-2X.jpg");
   }
 }
 @media (min-width: 768px) {
@@ -333,7 +333,7 @@ nav {
 }
 @media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
   .banner {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(".././images/Image-back-tablet-2X.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(".././images/2X/Image-back-tablet-2X.jpg");
   }
 }
 @media (min-width: 1200px) {
@@ -348,7 +348,7 @@ nav {
 }
 @media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
   .banner {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(".././images/Image-back-2X.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(".././images/2X/Image-back-2X.jpg");
   }
 }
 .descriptions {
@@ -1025,13 +1025,16 @@ nav {
 }
 .products {
   background-color: #FFFFFF;
-  padding: 94px 0;
+  padding: 60px 0;
 }
 
 .filters {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  max-width: 274px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 15px 8px;
+  margin-bottom: 40px;
 }
 .filters__item {
   font-family: "Roboto", sans-serif;
@@ -1053,30 +1056,21 @@ nav {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-.filters__list:not(:last-child) {
-  margin-right: 8px;
-}
 
 .brochure {
   display: flex;
+  gap: 30px;
   flex-wrap: wrap;
-  justify-content: space-between;
-  row-gap: 30px;
 }
 .brochure__item {
-  box-sizing: content-box;
-  width: 370px;
   background-color: #FFFFFF;
-  border: 1px solid #EEEEEE;
-  padding-bottom: 20px;
+  outline: 1px solid #EEEEEE;
 }
 .brochure__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .brochure__description {
   position: relative;
-  width: 370px;
-  height: 294px;
   overflow: hidden;
 }
 .brochure__description:hover .brochure__transition {
@@ -1099,15 +1093,13 @@ nav {
   line-height: 1.56;
   letter-spacing: 0.03em;
   margin: 0;
-  padding: 63px 24px;
+  padding: 77px 24px;
 }
 .brochure__category {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  margin-top: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin: 20px 24px;
 }
 .brochure__name {
   font-weight: 700;
@@ -1116,4 +1108,32 @@ nav {
   letter-spacing: 0.06em;
   color: #212121;
   margin-bottom: 4px;
+}
+
+@media (min-width: 768px) {
+  .filters {
+    justify-content: center;
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+  .brochure__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .brochure__transition {
+    padding-top: 49px;
+  }
+}
+@media (min-width: 1200px) {
+  .products {
+    padding: 94px 0;
+  }
+  .filters {
+    margin-bottom: 50px;
+  }
+  .brochure__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  .brochure__transition {
+    padding-top: 63px;
+  }
 }/*# sourceMappingURL=main.css.map */

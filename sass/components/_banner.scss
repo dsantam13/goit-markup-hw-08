@@ -45,7 +45,7 @@
     (min-resolution: 192dpi), 
     (min-resolution: 2dppx) {
         .banner {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('.././images/Image-back-phone-2X.jpg');
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('.././images/2X/Image-back-phone-2X.jpg');
         }
 }
 
@@ -58,7 +58,7 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         .banner {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('.././images/Image-back-tablet-2X.jpg');
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('.././images/2X/Image-back-tablet-2X.jpg');
         }
     }
 }
@@ -78,7 +78,7 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         .banner {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('.././images/Image-back-2X.jpg');
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('.././images/2X/Image-back-2X.jpg');
         }
     }
 }
